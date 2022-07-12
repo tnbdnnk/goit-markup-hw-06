@@ -711,7 +711,8 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover {
+.modal-close-btn:hover,
+.modal-close-btn:focus {
   fill: var(--accent-color);
 }
 
@@ -754,6 +755,10 @@ img {
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
+  fill: currentColor;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input {
@@ -773,12 +778,9 @@ img {
   border-color: var(--accent-color);
 }
 
-.modal-input:hover + .modal-input-icon {
-  fill: var(--accent-color);
-}
-
+.modal-input:hover + .modal-input-icon,
 .modal-input:focus + .modal-input-icon {
-  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .textarea {
