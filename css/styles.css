@@ -506,6 +506,7 @@ img {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -563,8 +564,7 @@ img {
 }
 
 .company-socials {
-  margin-left: 70px;
-  margin-top: 15px;
+  margin-left: auto;
 }
 
 .company-soc-title {
@@ -614,8 +614,7 @@ img {
 }
 
 .subscribe {
-  margin-left: 70px;
-  margin-top: 15px;
+  margin-left: auto;
 }
 
 .subscribe-field {
@@ -696,6 +695,9 @@ img {
 }
 
 .modal-close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -709,7 +711,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover .modal-close-icon {
+.modal-close-btn:hover {
   fill: var(--accent-color);
 }
 
@@ -747,7 +749,7 @@ img {
   position: relative;
 }
 
-.modal-icon {
+.modal-input-icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -771,12 +773,16 @@ img {
   border-color: var(--accent-color);
 }
 
-.modal-input:hover + .modal-icon {
+.modal-input:hover + .modal-input-icon {
   fill: var(--accent-color);
 }
 
-.modal-input:focus + .modal-icon {
+.modal-input:focus + .modal-input-icon {
   fill: var(--accent-color);
+}
+
+.textarea {
+  margin-bottom: 20px;
 }
 
 .textarea-feedback {
@@ -789,6 +795,7 @@ img {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .textarea-feedback:hover,
@@ -798,7 +805,7 @@ img {
 
 .checkbox {
   display: inline-block;
-  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .check-text {
@@ -843,6 +850,8 @@ img {
 }
 
 .button {
+  display: block;
+  margin: 0 auto;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -852,14 +861,12 @@ img {
   background-color: var(--btn-main-bg-color);
   border-radius: 4px;
   border: none;
-
   padding: 10px 32px;
   min-width: 200px;
   text-align: center;
   transition-property: box-shadow, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin-top: 30px;
 }
 
 .button:hover,
