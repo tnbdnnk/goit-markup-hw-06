@@ -806,8 +806,10 @@ img {
 }
 
 .checkbox {
-  display: inline-block;
+  display: flex;
   margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 .check-text {
